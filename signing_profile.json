@@ -1,0 +1,343 @@
+{
+  "schema": 1,
+  "name": "deepdroid-pe13-sargo-audited-baseline",
+  "description": "Baseline certificate overrides from the supplied DeepDroid-style template. Import the current source keys.mk before replacing it when exact continuity matters.",
+  "certificate_overrides": [
+    {
+      "module": "com.android.adbd",
+      "certificate": "com.android.adbd.certificate.override"
+    },
+    {
+      "module": "com.android.adservices",
+      "certificate": "com.android.adservices.certificate.override"
+    },
+    {
+      "module": "com.android.adservices.api",
+      "certificate": "com.android.adservices.api.certificate.override"
+    },
+    {
+      "module": "com.android.appsearch",
+      "certificate": "com.android.appsearch.certificate.override"
+    },
+    {
+      "module": "com.android.appsearch.apk",
+      "certificate": "com.android.appsearch.apk.certificate.override"
+    },
+    {
+      "module": "com.android.art",
+      "certificate": "com.android.art.certificate.override"
+    },
+    {
+      "module": "com.android.bluetooth",
+      "certificate": "com.android.bluetooth.certificate.override"
+    },
+    {
+      "module": "com.android.bt",
+      "certificate": "com.android.bt.certificate.override"
+    },
+    {
+      "module": "com.android.btservices",
+      "certificate": "com.android.btservices.certificate.override"
+    },
+    {
+      "module": "com.android.cellbroadcast",
+      "certificate": "com.android.cellbroadcast.certificate.override"
+    },
+    {
+      "module": "com.android.compos",
+      "certificate": "com.android.compos.certificate.override"
+    },
+    {
+      "module": "com.android.configinfrastructure",
+      "certificate": "com.android.configinfrastructure.certificate.override"
+    },
+    {
+      "module": "com.android.connectivity.resources",
+      "certificate": "com.android.connectivity.resources.certificate.override"
+    },
+    {
+      "module": "com.android.conscrypt",
+      "certificate": "com.android.conscrypt.certificate.override"
+    },
+    {
+      "module": "com.android.crashrecovery",
+      "certificate": "com.android.crashrecovery.certificate.override"
+    },
+    {
+      "module": "com.android.devicelock",
+      "certificate": "com.android.devicelock.certificate.override"
+    },
+    {
+      "module": "com.android.extservices",
+      "certificate": "com.android.extservices.certificate.override"
+    },
+    {
+      "module": "com.android.hardware.authsecret",
+      "certificate": "com.android.hardware.authsecret.certificate.override"
+    },
+    {
+      "module": "com.android.hardware.biometrics.face.virtual",
+      "certificate": "com.android.hardware.biometrics.face.virtual.certificate.override"
+    },
+    {
+      "module": "com.android.hardware.biometrics.fingerprint.virtual",
+      "certificate": "com.android.hardware.biometrics.fingerprint.virtual.certificate.override"
+    },
+    {
+      "module": "com.android.hardware.boot",
+      "certificate": "com.android.hardware.boot.certificate.override"
+    },
+    {
+      "module": "com.android.hardware.cas",
+      "certificate": "com.android.hardware.cas.certificate.override"
+    },
+    {
+      "module": "com.android.hardware.contexthub",
+      "certificate": "com.android.hardware.contexthub.certificate.override"
+    },
+    {
+      "module": "com.android.hardware.dumpstate",
+      "certificate": "com.android.hardware.dumpstate.certificate.override"
+    },
+    {
+      "module": "com.android.hardware.gatekeeper.nonsecure",
+      "certificate": "com.android.hardware.gatekeeper.nonsecure.certificate.override"
+    },
+    {
+      "module": "com.android.hardware.neuralnetworks",
+      "certificate": "com.android.hardware.neuralnetworks.certificate.override"
+    },
+    {
+      "module": "com.android.hardware.power",
+      "certificate": "com.android.hardware.power.certificate.override"
+    },
+    {
+      "module": "com.android.hardware.rebootescrow",
+      "certificate": "com.android.hardware.rebootescrow.certificate.override"
+    },
+    {
+      "module": "com.android.hardware.thermal",
+      "certificate": "com.android.hardware.thermal.certificate.override"
+    },
+    {
+      "module": "com.android.hardware.threadnetwork",
+      "certificate": "com.android.hardware.threadnetwork.certificate.override"
+    },
+    {
+      "module": "com.android.hardware.uwb",
+      "certificate": "com.android.hardware.uwb.certificate.override"
+    },
+    {
+      "module": "com.android.hardware.vibrator",
+      "certificate": "com.android.hardware.vibrator.certificate.override"
+    },
+    {
+      "module": "com.android.hardware.wifi",
+      "certificate": "com.android.hardware.wifi.certificate.override"
+    },
+    {
+      "module": "com.android.healthfitness",
+      "certificate": "com.android.healthfitness.certificate.override"
+    },
+    {
+      "module": "com.android.hotspot2.osulogin",
+      "certificate": "com.android.hotspot2.osulogin.certificate.override"
+    },
+    {
+      "module": "com.android.i18n",
+      "certificate": "com.android.i18n.certificate.override"
+    },
+    {
+      "module": "com.android.ipsec",
+      "certificate": "com.android.ipsec.certificate.override"
+    },
+    {
+      "module": "com.android.media",
+      "certificate": "com.android.media.certificate.override"
+    },
+    {
+      "module": "com.android.media.swcodec",
+      "certificate": "com.android.media.swcodec.certificate.override"
+    },
+    {
+      "module": "com.android.mediaprovider",
+      "certificate": "com.android.mediaprovider.certificate.override"
+    },
+    {
+      "module": "com.android.nearby.halfsheet",
+      "certificate": "com.android.nearby.halfsheet.certificate.override"
+    },
+    {
+      "module": "com.android.networkstack.tethering",
+      "certificate": "com.android.networkstack.tethering.certificate.override"
+    },
+    {
+      "module": "com.android.neuralnetworks",
+      "certificate": "com.android.neuralnetworks.certificate.override"
+    },
+    {
+      "module": "com.android.nfcservices",
+      "certificate": "com.android.nfcservices.certificate.override"
+    },
+    {
+      "module": "com.android.ondevicepersonalization",
+      "certificate": "com.android.ondevicepersonalization.certificate.override"
+    },
+    {
+      "module": "com.android.os.statsd",
+      "certificate": "com.android.os.statsd.certificate.override"
+    },
+    {
+      "module": "com.android.permission",
+      "certificate": "com.android.permission.certificate.override"
+    },
+    {
+      "module": "com.android.profiling",
+      "certificate": "com.android.profiling.certificate.override"
+    },
+    {
+      "module": "com.android.resolv",
+      "certificate": "com.android.resolv.certificate.override"
+    },
+    {
+      "module": "com.android.rkpd",
+      "certificate": "com.android.rkpd.certificate.override"
+    },
+    {
+      "module": "com.android.runtime",
+      "certificate": "com.android.runtime.certificate.override"
+    },
+    {
+      "module": "com.android.safetycenter.resources",
+      "certificate": "com.android.safetycenter.resources.certificate.override"
+    },
+    {
+      "module": "com.android.scheduling",
+      "certificate": "com.android.scheduling.certificate.override"
+    },
+    {
+      "module": "com.android.sdkext",
+      "certificate": "com.android.sdkext.certificate.override"
+    },
+    {
+      "module": "com.android.support.apexer",
+      "certificate": "com.android.support.apexer.certificate.override"
+    },
+    {
+      "module": "com.android.telephony",
+      "certificate": "com.android.telephony.certificate.override"
+    },
+    {
+      "module": "com.android.telephonycore",
+      "certificate": "com.android.telephonycore.certificate.override"
+    },
+    {
+      "module": "com.android.telephonymodules",
+      "certificate": "com.android.telephonymodules.certificate.override"
+    },
+    {
+      "module": "com.android.tethering",
+      "certificate": "com.android.tethering.certificate.override"
+    },
+    {
+      "module": "com.android.tzdata",
+      "certificate": "com.android.tzdata.certificate.override"
+    },
+    {
+      "module": "com.android.uprobestats",
+      "certificate": "com.android.uprobestats.certificate.override"
+    },
+    {
+      "module": "com.android.uwb",
+      "certificate": "com.android.uwb.certificate.override"
+    },
+    {
+      "module": "com.android.uwb.resources",
+      "certificate": "com.android.uwb.resources.certificate.override"
+    },
+    {
+      "module": "com.android.virt",
+      "certificate": "com.android.virt.certificate.override"
+    },
+    {
+      "module": "com.android.vndk.current",
+      "certificate": "com.android.vndk.current.certificate.override"
+    },
+    {
+      "module": "com.android.webapp",
+      "certificate": "com.android.webapp.certificate.override"
+    },
+    {
+      "module": "com.android.wifi",
+      "certificate": "com.android.wifi.certificate.override"
+    },
+    {
+      "module": "com.android.wifi.dialog",
+      "certificate": "com.android.wifi.dialog.certificate.override"
+    },
+    {
+      "module": "com.android.wifi.resources",
+      "certificate": "com.android.wifi.resources.certificate.override"
+    },
+    {
+      "module": "com.google.pixel.vibrator.hal",
+      "certificate": "com.google.pixel.vibrator.hal.certificate.override"
+    },
+    {
+      "module": "com.qorvo.uwb",
+      "certificate": "com.qorvo.uwb.certificate.override"
+    },
+    {
+      "module": "AdServicesApk",
+      "certificate": "com.android.adservices.api.certificate.override"
+    },
+    {
+      "module": "FederatedCompute",
+      "certificate": "com.android.federatedcompute.certificate.override"
+    },
+    {
+      "module": "HealthConnectBackupRestore",
+      "certificate": "com.android.health.connect.backuprestore.certificate.override"
+    },
+    {
+      "module": "HealthConnectController",
+      "certificate": "com.android.healthconnect.controller.certificate.override"
+    },
+    {
+      "module": "OsuLogin",
+      "certificate": "com.android.hotspot2.osulogin.certificate.override"
+    },
+    {
+      "module": "SafetyCenterResources",
+      "certificate": "com.android.safetycenter.resources.certificate.override"
+    },
+    {
+      "module": "ServiceConnectivityResources",
+      "certificate": "com.android.connectivity.resources.certificate.override"
+    },
+    {
+      "module": "ServiceUwbResources",
+      "certificate": "com.android.uwb.resources.certificate.override"
+    },
+    {
+      "module": "ServiceWifiResources",
+      "certificate": "com.android.wifi.resources.certificate.override"
+    },
+    {
+      "module": "TelecomServiceResources",
+      "certificate": "com.android.telecom.resources.certificate.override"
+    },
+    {
+      "module": "TelecomUi",
+      "certificate": "com.android.telecomui.certificate.override"
+    },
+    {
+      "module": "WebAppService",
+      "certificate": "com.android.webapp.certificate.override"
+    },
+    {
+      "module": "WifiDialog",
+      "certificate": "com.android.wifi.dialog.certificate.override"
+    }
+  ]
+}
