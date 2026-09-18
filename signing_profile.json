@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "name": "deepdroid-pe13-sargo-audited-baseline",
-  "description": "Baseline certificate overrides from the supplied DeepDroid-style template. Import the current source keys.mk before replacing it when exact continuity matters.",
+  "name": "deepdroid-sargo-current-source-80-mappings-76-certificates",
+  "description": "DeepDroid sargo profile: exact 80 active PRODUCT_CERTIFICATE_OVERRIDES mappings from the audited current source, with 76 available certificate modules.",
   "certificate_overrides": [
     {
       "module": "com.android.adbd",
@@ -264,10 +264,6 @@
       "certificate": "com.android.vndk.current.certificate.override"
     },
     {
-      "module": "com.android.webapp",
-      "certificate": "com.android.webapp.certificate.override"
-    },
-    {
       "module": "com.android.wifi",
       "certificate": "com.android.wifi.certificate.override"
     },
@@ -324,20 +320,13 @@
       "certificate": "com.android.wifi.resources.certificate.override"
     },
     {
-      "module": "TelecomServiceResources",
-      "certificate": "com.android.telecom.resources.certificate.override"
-    },
-    {
-      "module": "TelecomUi",
-      "certificate": "com.android.telecomui.certificate.override"
-    },
-    {
-      "module": "WebAppService",
-      "certificate": "com.android.webapp.certificate.override"
-    },
-    {
       "module": "WifiDialog",
       "certificate": "com.android.wifi.dialog.certificate.override"
     }
+  ],
+  "extra_certificate_modules": [
+    "com.android.telecom.resources.certificate.override",
+    "com.android.telecomui.certificate.override",
+    "com.android.webapp.certificate.override"
   ]
 }

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify a signed PE13 target-files ZIP against the v6 private key policy.
+"""Verify a signed DeepDroid target-files ZIP against the v7 private key policy.
 
 Unlike v5, APK/APEX container verification checks the EXPECTED certificate for
 that metadata key path, not merely "any certificate from vendor/priv/keys".
@@ -284,7 +284,7 @@ def main() -> int:
     private_payloads=known_private_payloads()
 
     failures=checked=0
-    with zipfile.ZipFile(tf) as zf, tempfile.TemporaryDirectory(prefix="pe13-v6-check-") as td:
+    with zipfile.ZipFile(tf) as zf, tempfile.TemporaryDirectory(prefix="deepdroid-v7-check-") as td:
         tmp=Path(td)
         apk_meta={r.get("name",""): r for r in parse_meta_rows(read(zf,"META/apkcerts.txt"))}
         apex_meta={r.get("name",""): r for r in parse_meta_rows(read(zf,"META/apexkeys.txt"))}

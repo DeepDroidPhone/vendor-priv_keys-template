@@ -1,0 +1,9 @@
+DeepDroid private-signing tooling.
+
+Provenance:
+- informed by the user-supplied android_vendor_lineage-priv_keys template;
+- informed by the user-supplied vendor-priv_keys-template;
+- adapted to the audited DeepDroid signing profile.
+
+The active profile contains 80 PRODUCT_CERTIFICATE_OVERRIDES mappings,
+73 active certificate identities, and 76 available certificate modules.

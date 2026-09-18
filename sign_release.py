@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Release-sign PE13 target-files with pre-generated private keys.
+"""Release-sign DeepDroid target-files with pre-generated private keys.
 
 The wrapper never creates private keys. PRESIGNED and external vendor/device
 artifacts are preserved, while vendor/priv/keys/* is always this ROM's keyspace.

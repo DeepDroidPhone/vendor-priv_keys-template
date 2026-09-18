@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Read-only integration audit for the audited PE13/sargo tree."""
+"""Read-only integration audit for the DeepDroid signing tree."""
 from __future__ import annotations
 import re, shlex, subprocess, sys
 from pathlib import Path
@@ -52,22 +52,22 @@ def main() -> int:
         print("[BLOCKER] vendor/priv/keys/keys.mk is not inherited from vendor/aosp/config/common.mk")
         blockers+=1
 
-    boardroot=TOP/"device/google/bonito"
-    include_hits=[]; danger=[]
-    if boardroot.exists():
-        for path in boardroot.rglob("*.mk"):
+    keys_mk=SCRIPT_DIR/"keys.mk"
+    if keys_mk.is_file() and "-include vendor/priv/keys/BoardConfigPrivKeys.mk" in keys_mk.read_text(errors="replace"):
+        print("[OK] single-entry private AVB fan-out: keys.mk -> BoardConfigPrivKeys.mk")
+    else:
+        print("[BLOCKER] keys.mk does not include vendor/priv/keys/BoardConfigPrivKeys.mk")
+        blockers+=1
+
+    danger=[]
+    device_root=TOP/"device"
+    if device_root.exists():
+        for path in device_root.rglob("*.mk"):
             text=path.read_text(errors="replace")
-            if "vendor/priv/keys/BoardConfigPrivKeys.mk" in text:
-                include_hits.append(path)
             for ln,line in enumerate(text.splitlines(),1):
                 if "BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS" in line:
                     for b in parse_flags(line):
                         danger.append((path,ln,b,line.strip()))
-    if include_hits:
-        print("[OK] private AVB include:",", ".join(map(str,include_hits)))
-    else:
-        print("[BLOCKER] BoardConfigPrivKeys.mk is not included under device/google/bonito")
-        blockers+=1
     for path,ln,b,line in danger:
         print(f"[BLOCKER] unsafe AVB config {path}:{ln}: {b} :: {line}")
         blockers+=1

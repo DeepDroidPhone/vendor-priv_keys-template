@@ -1,8 +1,12 @@
-# PixelExperience Android 13 private AVB configuration.
-# Include this at the END of the final bonito/sargo BoardConfig chain.
+# DeepDroid private AVB configuration.
+# Loaded automatically by vendor/priv/keys/keys.mk so DeepDroid products only
+# need a single include from vendor/aosp/config/common.mk.
 #
-# IMPORTANT: remove release-unsafe --flags 3 from the device tree rather than
-# trying to hide it here.
+# IMPORTANT: remove release-unsafe AVB disable flags at their source rather than
+# trying to hide them here.
+
+ifndef DEEPDROID_PRIV_KEYS_BOARDCONFIG_INCLUDED
+DEEPDROID_PRIV_KEYS_BOARDCONFIG_INCLUDED := true
 
 PRIVATE_AVB_KEY ?= vendor/priv/keys/avb.pem
 PRIVATE_AVB_ALGORITHM ?= SHA256_RSA4096
@@ -61,3 +65,5 @@ endif
 else
 $(warning vendor/priv/keys/BoardConfigPrivKeys.mk: BOARD_AVB_ENABLE is not true; AVB override inactive)
 endif
+
+endif # DEEPDROID_PRIV_KEYS_BOARDCONFIG_INCLUDED
